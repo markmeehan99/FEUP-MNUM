@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-double f(double x, double y) { return y;}
+double f(double x, double y) { return x + y;}
 
 void rk4(double x0, double y0, double h, unsigned int nit)
 {
@@ -24,7 +24,7 @@ void rk4(double x0, double y0, double h, unsigned int nit)
 int main()
 {
     const double x0 = 0;
-	const double y0 = 1;
+	const double y0 = 0;
     const double h = 0.1;
 	const unsigned int nit = 100;
     rk4(x0, y0, h, nit);
